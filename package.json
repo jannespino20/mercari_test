@@ -35,7 +35,8 @@
     "start:intl": "nx start @notesnook/intl",
     "prettier": "npx prettier . --write",
     "lint": "npx eslint ./apps/ ./packages/",
-    "linc": "npx eslint ./apps/ ./packages/ --cache"
+    "linc": "npx eslint ./apps/ ./packages/ --cache",
+    "test:android-cucumber": "nx cucumber-android @notesnook/mobile"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.1",
@@ -59,6 +60,7 @@
     "tsup": "^8.3.0"
   },
   "dependencies": {
+    "cucumber": "^6.0.7",
     "eslint-plugin-header": "^3.1.1",
     "fdir": "^6.0.2",
     "listr2": "^8.2.3",

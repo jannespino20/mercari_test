@@ -21,7 +21,8 @@
     "e2e-ios": "cd native && detox test -c ios.sim.release --detectOpenHandles",
     "bump": "cd native && npx react-native bump-version --skip-semver-for android",
     "release-android": "cd native/android && GITHUB_RELEASE=true ENVFILE=.env.public ./gradlew assembleRelease --no-daemon",
-    "release-android-bundle": "cd native/android && ./gradlew bundleRelease --no-daemon"
+    "release-android-bundle": "cd native/android && ./gradlew bundleRelease --no-daemon",
+    "cucumber-android": "cd native && DETOX_CONFIGURATION=android.emu.release cucumber-js ../e2e/tests/features --require ../e2e/tests/step_definitions --require ../e2e/init.js ${TAG:+--tags \"$TAG\"}"
   },
   "devDependencies": {
     "@types/react": "^18.2.39",

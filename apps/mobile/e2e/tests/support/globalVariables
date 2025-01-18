@@ -1,0 +1,24 @@
+// Object to hold all global variables
+const globals = {
+  test: null
+};
+
+// Function to get the value of a global variable
+function getGlobalVariable(key) {
+  return globals[key];
+}
+
+// Function to set the value of a global variable
+function setGlobalVariable(key, value) {
+  if (globals.hasOwnProperty(key)) {
+    globals[key] = value;
+  } else {
+    console.warn(`Global variable "${key}" not found.`);
+  }
+}
+
+// Export the functions and the global variables
+module.exports = {
+  getGlobalVariable,
+  setGlobalVariable
+};
