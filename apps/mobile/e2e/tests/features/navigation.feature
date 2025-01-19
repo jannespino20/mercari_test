@@ -1,5 +1,5 @@
 @suite-3
-Feature: Main functionalities of Navigation feature
+Feature: Main functionalities of the Navigation feature
 
     @test-7
     Scenario: Verify that users can navigate through all pages

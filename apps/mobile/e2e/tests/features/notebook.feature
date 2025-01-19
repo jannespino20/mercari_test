@@ -1,5 +1,5 @@
 @suite-2
-Feature: Main functionality of Notebook feature
+Feature: Main functionalities of the Notebook feature
 
     @test-6
     Scenario: Verify that a user can create a notebook

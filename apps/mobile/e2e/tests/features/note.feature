@@ -1,5 +1,5 @@
 @suite-1
-Feature: Main functionalities of Notes feature
+Feature: Main functionalities of the Notes feature
 
     @test-1
     Scenario: Verify that a user can create a note
