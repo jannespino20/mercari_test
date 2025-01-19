@@ -12,6 +12,24 @@ From the instructions I received, I need to find a public application to run my 
 
 For the system under test, I found [Notesnook](https://notesnook.com/). A notes app which is still actively being developed. The repository is a monorepo of React(Web), React-Native(Mobile App), and Electron (Desktop App) which would be perfect to showcase how I can adapt to a team in a current project. Although they have a few tests already, I deleted everything and started from scratch to write my own test cases.
 
+### Setup and running tests
+
+To install:
+`git clone`
+`cd notesnook`
+`npm install`
+
+Configure your device and at `.detoxrc.js`
+Configure your apk binary path at `.detoxrc.js`. Should match your machine if x86_64 or arm64-v8a.
+
+To run tests (Go to `apps/mobile/e2e/tests/features` to get the test IDs):
+
+1. Build the apk first: `npm run build:android`
+2. Run all tests: `npm run test:cucumber-android`
+3. Run a single test: `TAG=@test-1 npm run test:cucumber-android`
+4. Run a single suite: `TAG=@suite-1 npm run test:cucumber-android`
+5. Run a multiple test: `TAG="@test-2 and @test-2" npm run test:cucumber-android`
+
 ### File Structure
 
 Since this is a monorepo, this includes codes for their web and desktop app, too. But fear not! I actually just ended up using a small part of it so please navigate to ` apps/mobile/e2e`. All of my test cases are written there. Except for the `test.ids.js` this is a file for their own tests (which I removed before I started) and for some reason, another file is referencing an id from it and the build fails when I try to remove it (booo!).
@@ -29,24 +47,6 @@ In ` apps/mobile/e2e`, you will find:
     - **utils.js**: Some codes are used more than once, twice, thrice! Why not put it here?
     - **globalVariables.js**: Let's just store variables that we want to use everywhere here during a run!
 - **init.js**: cucumber and detox initializer settings
-
-## Setup and running tests
-
-To install:
-`git clone`
-`cd notesnook`
-`npm install`
-
-Configure your device and at `.detoxrc.js`
-Configure your apk binary path at `.detoxrc.js`. Should match your machine if x86_64 or arm64-v8a.
-
-To run tests (Go to `apps/mobile/e2e/tests/features` to get the test IDs):
-
-1. Build the apk first: `npm run build:android`
-2. Run all tests: `npm run test:cucumber-android`
-3. Run a single test: `TAG=@test-1 npm run test:cucumber-android`
-4. Run a single suite: `TAG=@suite-1 npm run test:cucumber-android`
-5. Run a multiple test: `TAG="@test-2 and @test-2" npm run test:cucumber-android`
 
 ## Tackling the test
 
