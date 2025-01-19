@@ -1,6 +1,6 @@
 ## Overview
 
-Hello! This repository is created by Jann Espino for the sole purpose of a QA Engineer job application exam at Mercari.
+Hello! This repository is created by Jann Espino for the sole purpose of a QA Engineer job application exam at Mercari. I made a video of all the tests I was able to create here: https://drive.google.com/file/d/1cQIP6FdLhFBFImTIsagX_2HLag9AKpxu/view?usp=sharing feel free to view it!
 
 ## About the test
 
