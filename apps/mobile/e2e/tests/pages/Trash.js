@@ -1,6 +1,5 @@
 const { getGlobalVariable } = require("../support/globalVariables");
-const { setGlobalVariable } = require("../support/globalVariables");
-const { classes, testId } = require("../support/identifiers");
+const { testId } = require("../support/identifiers");
 const { tapElement } = require("../support/utils");
 
 class Note {

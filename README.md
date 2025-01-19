@@ -6,9 +6,9 @@ Hello! This repository is created by Jann Espino for the sole purpose of a QA En
 
 From the instructions I received, I need to find a public application to run my test cases and to not spend more than 3 hours developing within a 7-day limit with these as main criteria:
 
-> Testing strategy: how you select and prioritize test cases.
-> Implementation: how you set up and write tests with Detox including readability and maintainability
-> Problem-solving: how you handle any challenges encountered.
+- Testing strategy: how you select and prioritize test cases.
+- Implementation: how you set up and write tests with Detox including readability and maintainability
+- Problem-solving: how you handle any challenges encountered.
 
 For the system under test, I found [Notesnook](https://notesnook.com/). A notes app which is still actively being developed. The repository is a monorepo of React(Web), React-Native(Mobile App), and Electron (Desktop App) which would be perfect to showcase how I can adapt to a team in a current project. Although they have a few tests already, I deleted everything and started from scratch to write my own test cases.
 

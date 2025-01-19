@@ -1,10 +1,5 @@
-const { getGlobalVariable } = require("../support/globalVariables");
 const { testId } = require("../support/identifiers");
-const {
-  tapElement,
-  softAssert,
-  softAssertTrigger
-} = require("../support/utils");
+const { tapElement, softAssert } = require("../support/utils");
 
 class Navigation {
   async tapMenuButton() {
@@ -55,7 +50,7 @@ class Navigation {
     }
   }
 
-  async verifyNavigationOptions(navigationOptions) {
+  async verifyNavigationOptions() {
     await softAssert.trigger();
   }
 }

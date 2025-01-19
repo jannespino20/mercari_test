@@ -16,7 +16,7 @@ class Utils {
     await element.tap();
   }
 
-  // Custom tap that waits for element visibility first
+  // Custom typeText that waits for element visibility first
   async typeToElement(element, text) {
     await waitFor(element).toBeVisible().withTimeout(globalTimeout);
     await element.typeText(text, true);

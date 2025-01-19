@@ -1,5 +1,5 @@
 const { setGlobalVariable } = require("../support/globalVariables");
-const { classes, testId } = require("../support/identifiers");
+const { classes } = require("../support/identifiers");
 const { typeToElement } = require("../support/utils");
 
 class Note {
