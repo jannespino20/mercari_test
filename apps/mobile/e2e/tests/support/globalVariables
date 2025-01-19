@@ -1,6 +1,10 @@
 // Object to hold all global variables
 const globals = {
-  test: null
+  noteContent: null,
+  notePassword: null,
+  notebookTitle: null,
+  noteTitles: [],
+  softAssertResults: []
 };
 
 // Function to get the value of a global variable
